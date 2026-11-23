@@ -66,22 +66,23 @@ a:focus-visible {
 /* STYLE GUIDE HEADER */
 
 .style-guide-header {
-  padding: 2rem 5rem 3rem;
+  padding: 2rem 5rem;
   border-bottom: 1px solid #e8e8e8;
 }
 
 .header-intro {
-  margin-top: 3rem;
+  padding: 3rem 5rem 0;
+  margin-top: 0;
 }
 
-.style-guide-header h1 {
+.header-intro h1 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
-.style-guide-header p {
+.header-intro h1 p {
   font-size: 1rem;
   margin: 0;
 }
@@ -690,4 +691,276 @@ pre code {
 
 .footer-links a:hover {
   color: #1f49ef;
+}
+
+/* HOME PAGE */
+
+.home-header {
+  padding: 2rem 5rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.home-main {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.home-main section {
+  scroll-margin-top: 2rem;
+}
+
+/* ABOUT */
+
+.home-about {
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+  max-width: 47rem;
+}
+
+.home-about h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.home-bio {
+  max-width: 40rem;
+  margin-bottom: 2rem;
+}
+
+.home-bio p {
+  font-size: 0.95rem;
+  line-height: 1.9;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+}
+
+/* WORK */
+
+.home-work {
+  padding-top: 3.5rem;
+  padding-bottom: 5rem;
+  border-top: 1px solid #e8e8e8;
+}
+
+.home-section-heading {
+  margin-bottom: 2.5rem;
+}
+
+.home-section-heading h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.home-work .project-image {
+  height: 280px;
+}
+
+.home-work .project-description h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.home-work .project-card:hover .project-description h3,
+.home-work .project-card:focus-visible .project-description h3 {
+  color: #1f49ef;
+}
+
+/* CONTACT */
+
+.home-contact {
+  padding-top: 3.5rem;
+  padding-bottom: 5rem;
+  border-top: 1px solid #e8e8e8;
+}
+
+.home-contact h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-contact .body-text {
+  max-width: 30rem;
+}
+
+.home-contact .contact-links {
+  margin-top: 2rem;
+}
+
+/* PROJECT PAGES */
+
+.case-header {
+  padding: 2rem 5rem;
+  border-bottom: 0.0625rem solid #e8e8e8;
+}
+
+.case-main {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.case-main section {
+  scroll-margin-top: 2rem;
+}
+
+/* PROJECT INTRODUCTION */
+
+.case-intro {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.case-intro > .caption-text {
+  margin-top: 4rem;
+  color: #1f49ef;
+}
+
+.case-intro h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.case-subtitle {
+  font-family: "Nourd", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  max-width: 40rem;
+  margin-bottom: 3rem;
+}
+
+.case-overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.case-overview h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.case-overview p {
+  font-size: 0.85rem;
+  margin-top: 0;
+  max-width: 19rem;
+}
+
+/* PROJECT SECTIONS */
+
+.case-section {
+  display: grid;
+  grid-template-columns: 13.75rem minmax(0, 1fr);
+  gap: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  border-top: 0.0625rem solid #e8e8e8;
+}
+
+.case-section-heading .caption-text {
+  color: #1f49ef;
+}
+
+.case-section-heading h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 0.7rem;
+}
+
+.case-section-content {
+  min-width: 0;
+}
+
+.case-section-content > p {
+  font-size: 0.9rem;
+  line-height: 1.9;
+  max-width: 40rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+/* PROJECT IMAGES */
+
+.case-figure {
+  margin: 2rem 0 0;
+}
+
+.case-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: #f5f5f2;
+}
+
+.case-hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+.case-image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.case-image-grid .case-figure {
+  margin-top: 0;
+  min-width: 0;
+}
+
+.case-figure figcaption {
+  font-size: 0.75rem;
+  color: #626c84;
+  margin-top: 0.7rem;
+  margin-bottom: 1.5rem;
+}
+
+/* NEXT PROJECT */
+
+.case-next {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+  border-top: 0.0625rem solid #e8e8e8;
+}
+
+.case-next-link {
+  font-family: "Nourd", sans-serif;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.case-next-link:hover {
+  color: #1f49ef;
+}
+
+/* PROJECT PREVIEW IMAGES */
+
+.home-work .project-image {
+  overflow: hidden;
+}
+
+.home-work .project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-work .project-card:hover .project-image img {
+  opacity: 0.8;
 }

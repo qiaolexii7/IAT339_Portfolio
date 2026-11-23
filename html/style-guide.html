@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio Style Guide</title>
+    <link href="../css/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="style-guide-header" id="top">
+      <nav class="main-navigation" aria-label="Main navigation">
+        <a class="site-name" href="../html/index.html">
+          lexi qiao
+          <img src="../img/brand-symbol.svg" alt="" class="brand-symbol" />
+        </a>
+
+        <div class="main-nav-links">
+          <a class="nav-link" href="#ethos">About</a>
+          <a class="nav-link" href="#project-preview">Work</a>
+          <a class="nav-link" href="#contact-example">Contact</a>
+        </div>
+      </nav>
+
+      <div class="header-intro">
+        <h1>Portfolio Style Guide</h1>
+        <p>A visual and interactive design system for Lexi Qiao's portfolio.</p>
+      </div>
+    </header>
+
+    <div class="style-guide-layout">
+      <nav class="style-guide-nav" aria-label="Style guide navigation">
+        <p class="nav-heading">STYLE GUIDE</p>
+        <a href="#interactive-elements">Interactive Elements</a>
+        <a href="#text-elements">Text Elements</a>
+        <a href="#combined-elements">Combined Elements</a>
+        <a href="#ethos">Ethos</a>
+        <a href="#branding">Branding</a>
+
+        <p class="nav-heading templates-heading">TEMPLATES</p>
+        <a href="index.html">Website Templates</a>
+      </nav>
+
+      <main class="style-guide-main">
+        <!-- INTERACTIVE ELEMENTS -->
+        <section id="interactive-elements">
+          <h2>Interactive Elements</h2>
+
+          <div class="component">
+            <h3>In-text Link</h3>
+
+            <p class="component-label">CSS Selector</p>
+            <p><code>.in-text-link</code></p>
+
+            <p class="component-label">Sample Code</p>
+            <pre><code>&lt;a class="in-text-link" href="#ethos"&gt;my design approach&lt;/a&gt;</code></pre>
+
+            <p class="component-label">Rendered Element</p>
+            <p>
+              Learn more about
+              <a class="in-text-link" href="#ethos">my design approach</a>.
+            </p>
+          </div>
+
+          <div class="component">
+            <h3>Navigation Link</h3>
+
+            <p class="component-label">CSS Selector</p>
+            <p><code>.nav-link</code></p>
+
+            <p class="component-label">Sample Code</p>
+            <pre><code>&lt;a class="nav-link" href="#ethos"&gt;About&lt;/a&gt;</code></pre>
+
+            <p class="component-label">Rendered Element</p>
+            <div class="navigation-example">
+              <a class="nav-link" href="#ethos">About</a>
+              <a class="nav-link" href="#project-preview">Work</a>
+              <a class="nav-link" href="#contact-example">Contact</a>
+            </div>
+          </div>
+
+          <div class="component">
+            <h3>Primary Button</h3>
+
+            <p class="component-label">CSS Selector</p>
+            <p><code>.primary-button</code></p>
+
+            <p class="component-label">Sample Code</p>
+            <pre><code>&lt;a class="primary-button" href="#project-preview"&gt;View Work &amp;rarr;&lt;/a&gt;</code></pre>
+
+            <p class="component-label">Rendered Element</p>
+            <a class="primary-button" href="#project-preview">
+              View Work &rarr;
+            </a>
+          </div>
+
+          <div class="component">
+            <h3>Secondary Button</h3>
+
+            <p class="component-label">CSS Selector</p>
+            <p><code>.secondary-button</code></p>
+
+            <p class="component-label">Sample Code</p>
+            <pre><code>&lt;a class="secondary-button" href="#ethos"&gt;Learn More&lt;/a&gt;</code></pre>
+
+            <p class="component-label">Rendered Element</p>
+            <a class="secondary-button" href="#ethos"> Learn More </a>
+          </div>
+        </section>
+
+        <!-- TEXT ELEMENTS -->
+        <section id="text-elements">
+          <h2>Text Elements</h2>
+
+          <div class="component">
+            <h3>Headings</h3>
+
+            <p class="component-label">CSS Selectors</p>
+            <p><code>h1</code>, <code>h2</code>, <code>h3</code></p>
+
+            <p class="component-label">Sample Code</p>
+            <pre><code>&lt;h1&gt;Selected Work&lt;/h1&gt;
+&lt;h2&gt;Project Overview&lt;/h2&gt;
+&lt;h3&gt;Design Process&lt;/h3&gt;</code></pre>
+
+            <p class="component-label">Rendered Elements</p>
+            <div class="text-example">
+              <h1>Selected Work</h1>
+              <h2>Project Overview</h2>
+              <h3>Design Process</h3>
+            </div>
+          </div>
+
+          <div class="component">
+            <h3>Paragraphs</h3>
+
+            <p class="component-label">CSS Selector</p>
+            <p><code>.body-text</code></p>
+
+            <p class="component-label">Sample Code</p>
+            <pre><code>&lt;p class="body-text"&gt;Design begins with understanding people and their needs.&lt;/p&gt;</code></pre>
+
+            <p class="component-label">Rendered Element</p>
+            <p class="body-text">
+              Design begins with understanding people and their needs. I enjoy
+              exploring how thoughtful interactions and visual details can make
+              digital experiences more intuitive, engaging, and enjoyable.
+            </p>
+          </div>
+
+          <div class="component">
+            <h3>Lists</h3>
+
+            <p class="component-label">CSS Selector</p>
+            <p><code>.content-list</code></p>
+
+            <p class="component-label">Sample Code</p>
+            <pre><code>&lt;ul class="content-list"&gt;
+  &lt;li&gt;UX Design&lt;/li&gt;
+  &lt;li&gt;Interaction Design&lt;/li&gt;
+  &lt;li&gt;Visual Design&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+            <p class="component-label">Rendered Element</p>
+            <ul class="content-list">
+              <li>UX Design</li>
+              <li>Interaction Design</li>
+              <li>Visual Design</li>
+            </ul>
+          </div>
+
+          <div class="component">
+            <h3>Captions &amp; Labels</h3>
+
+            <p class="component-label">CSS Selector</p>
+            <p><code>.caption-text</code></p>
+
+            <p class="component-label">Sample Code</p>
+            <pre><code>&lt;p class="caption-text"&gt;UI/UX DESIGN&lt;/p&gt;</code></pre>
+
+            <p class="component-label">Rendered Element</p>
+            <p class="caption-text">UI/UX DESIGN</p>
+          </div>
+        </section>
+
+        <!-- COMBINED ELEMENTS -->
+        <section id="combined-elements">
+          <h2>Combined Elements</h2>
+
+          <div class="component">
+            <h3>Main Navigation</h3>
+
+            <p class="component-label">CSS Selector</p>
+            <p><code>.main-navigation</code></p>
+
+            <p class="component-label">Sample Code</p>
+            <pre><code>&lt;nav class="main-navigation"&gt;
+  &lt;a class="site-name" href="#top"&gt;
+    lexi qiao
+    &lt;img src="../img/brand-symbol.svg" alt="" class="brand-symbol"&gt;
+  &lt;/a&gt;
+
+  &lt;div class="main-nav-links"&gt;
+    &lt;a class="nav-link" href="#about"&gt;About&lt;/a&gt;
+    &lt;a class="nav-link" href="#work"&gt;Work&lt;/a&gt;
+    &lt;a class="nav-link" href="#contact"&gt;Contact&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+
+            <p class="component-label">Rendered Element</p>
+            <div class="demo-area">
+              <nav class="main-navigation" aria-label="Navigation example">
+                <a class="site-name" href="#top">
+                  lexi qiao
+                  <img
+                    src="../img/brand-symbol.svg"
+                    alt=""
+                    class="brand-symbol"
+                  />
+                </a>
+
+                <div class="main-nav-links">
+                  <a class="nav-link" href="#ethos">About</a>
+                  <a class="nav-link" href="#project-preview">Work</a>
+                  <a class="nav-link" href="#contact-example">Contact</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+
+          <div class="component" id="project-preview">
+            <h3>Project Preview</h3>
+
+            <p class="component-label">CSS Selector</p>
+            <p><code>.project-card</code></p>
+
+            <p class="component-label">Sample Code</p>
+            <pre><code>&lt;a class="project-card" href="qqtea.html"&gt;
+  &lt;div class="project-image"&gt;Project Image&lt;/div&gt;
+
+  &lt;div class="project-description"&gt;
+    &lt;div&gt;
+      &lt;h4&gt;QQTea&lt;/h4&gt;
+      &lt;p&gt;UI/UX Design, Web Development, Illustration&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/a&gt;</code></pre>
+
+            <p class="component-label">Rendered Elements</p>
+            <div class="project-grid">
+              <a class="project-card" href="qqtea.html">
+                <div class="project-image">
+                  <span>Project Image</span>
+                </div>
+
+                <div class="project-description">
+                  <div>
+                    <h4>QQTea</h4>
+                    <p>UI/UX Design, Web Development, Illustration</p>
+                  </div>
+                  <span class="project-arrow" aria-hidden="true">&nearr;</span>
+                </div>
+              </a>
+
+              <a class="project-card" href="sparkjam.html">
+                <div class="project-image">
+                  <span>Project Image</span>
+                </div>
+
+                <div class="project-description">
+                  <div>
+                    <h4>SparkJam</h4>
+                    <p>UX Design, Interaction Design, Prototyping</p>
+                  </div>
+                  <span class="project-arrow" aria-hidden="true">&nearr;</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="component" id="contact-example">
+            <h3>Contact Section</h3>
+
+            <p class="component-label">CSS Selector</p>
+            <p><code>.contact-preview</code></p>
+
+            <p class="component-label">Sample Code</p>
+            <pre><code>&lt;div class="contact-preview"&gt;
+  &lt;p class="caption-text"&gt;GET IN TOUCH&lt;/p&gt;
+  &lt;h3&gt;Let's connect&lt;span class="accent"&gt;.&lt;/span&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+    Interested in opportunities involving UX,
+    interaction, and visual design.
+  &lt;/p&gt;
+
+  &lt;div class="contact-links"&gt;
+    &lt;a class="in-text-link" href="mailto:yqa34@sfu.ca"&gt;
+      &lt;img src="../img/email.svg" alt=""&gt;
+      yqa34@sfu.ca
+    &lt;/a&gt;
+
+    &lt;a class="in-text-link" href="https://www.linkedin.com/in/lexi-qiao/"&gt;
+      &lt;img src="../img/linkedin.svg" alt=""&gt;
+      LinkedIn
+    &lt;/a&gt;
+
+    &lt;a class="in-text-link" href="https://github.com/qiaolexii7"&gt;
+      &lt;img src="../img/github.svg" alt=""&gt;
+      GitHub
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <p class="component-label">CSS Selector</p>
+            <p><code>.contact-preview</code></p>
+
+            <p class="component-label">Rendered Element</p>
+            <div class="contact-preview">
+              <p class="caption-text">GET IN TOUCH</p>
+              <h3>Let's connect<span class="accent">.</span></h3>
+              <p>
+                Interested in opportunities involving UX, interaction, and
+                visual design.
+              </p>
+
+              <div class="contact-links">
+                <a class="in-text-link" href="mailto:yqa34@sfu.ca">
+                  <img src="../img/email.svg" alt="" />
+                  yqa34@sfu.ca
+                </a>
+
+                <a
+                  class="in-text-link"
+                  href="https://www.linkedin.com/in/lexi-qiao/"
+                >
+                  <img src="../img/linkedin.svg" alt="" />
+                  LinkedIn
+                </a>
+
+                <a class="in-text-link" href="https://github.com/qiaolexii7">
+                  <img src="../img/github.svg" alt="" />
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ETHOS -->
+        <section id="ethos">
+          <h2>Ethos</h2>
+
+          <p class="body-text">
+            My portfolio reflects my approach to design through a balance of
+            simplicity and visual expression. A minimal layout and consistent
+            typography establish clarity, while selective use of colour and
+            imagery introduces personality. These choices reflect how I approach
+            my work: understanding the purpose behind each decision, connecting
+            function with visual communication, and refining the details that
+            shape the overall experience.
+          </p>
+
+          <h3 class="process-heading">How this translates into my process</h3>
+
+          <div class="ethos-values">
+            <div>
+              <p class="value-number">01</p>
+              <h3>Understand</h3>
+              <p>
+                Explore the context, people, and problems before developing a
+                direction
+              </p>
+            </div>
+
+            <div>
+              <p class="value-number">02</p>
+              <h3>Connect</h3>
+              <p>
+                Bring together user needs, functionality, and visual
+                communication
+              </p>
+            </div>
+
+            <div>
+              <p class="value-number">03</p>
+              <h3>Refine</h3>
+              <p>
+                Develop and iterate on details to improve both usability and
+                presentation
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- BRANDING -->
+        <section id="branding">
+          <h2>Branding</h2>
+
+          <div class="component">
+            <h3>Colour Palette</h3>
+
+            <p class="body-text">
+              White and navy establish the primary visual identity. Cobalt blue
+              introduces emphasis through links, interaction states, and
+              selected typographic details. Soft grey provides contrast for
+              secondary content.
+            </p>
+
+            <div class="colour-grid">
+              <div class="colour-item">
+                <div class="colour-swatch swatch-white"></div>
+                <h4>White</h4>
+                <p>#FFFFFF</p>
+                <p>Primary background</p>
+              </div>
+
+              <div class="colour-item">
+                <div class="colour-swatch swatch-navy"></div>
+                <h4>Deep Navy</h4>
+                <p>#172653</p>
+                <p>Primary typography and headings</p>
+              </div>
+
+              <div class="colour-item">
+                <div class="colour-swatch swatch-blue"></div>
+                <h4>Cobalt Blue</h4>
+                <p>#1E3FC2</p>
+                <p>Interactive elements and accents</p>
+              </div>
+
+              <div class="colour-item">
+                <div class="colour-swatch swatch-grey"></div>
+                <h4>Soft Grey</h4>
+                <p>#F5F5F2</p>
+                <p>Secondary surfaces and containers</p>
+              </div>
+            </div>
+
+            <h4 class="example-heading">Colour Application</h4>
+
+            <div class="application-example">
+              <div class="application-info">
+                <p class="caption-text">PRIMARY PALETTE</p>
+                <p>White / Navy / Cobalt</p>
+                <p class="component-note">
+                  Used for headings, text, interactive elements, and selective
+                  emphasis.
+                </p>
+              </div>
+
+              <div class="application-preview">
+                <p class="caption-text">SELECTED WORK</p>
+                <h3>Designed with <span class="accent">intention.</span></h3>
+                <p>
+                  A selection of projects exploring UX, interaction, and visual
+                  design.
+                </p>
+                <a class="in-text-link" href="#project-preview">
+                  Explore selected work
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="component">
+            <h3>Typography</h3>
+
+            <p class="body-text">
+              Nourd is used for headings and prominent text, with its bold
+              weight providing emphasis where needed. Montserrat is used for
+              paragraphs, navigation, captions, and supporting information.
+            </p>
+
+            <div class="type-row">
+              <div class="type-info">
+                <p class="caption-text">NOURD / BOLD</p>
+                <p class="font-nourd-bold">Aa Bb Cc Dd<br />0123456789</p>
+                <p class="component-note">
+                  Primary headings and selected emphasis
+                </p>
+              </div>
+
+              <div class="type-preview">
+                <h3 class="bold-preview">Selected Work</h3>
+                <p class="component-note">Primary heading example</p>
+              </div>
+            </div>
+
+            <div class="type-row">
+              <div class="type-info">
+                <p class="caption-text">NOURD / REGULAR</p>
+                <p class="font-nourd">Aa Bb Cc Dd<br />0123456789</p>
+                <p class="component-note">Section headings and display text</p>
+              </div>
+
+              <div class="type-preview">
+                <h3 class="regular-preview">Project Overview</h3>
+                <p class="component-note">Section heading example</p>
+              </div>
+            </div>
+
+            <div class="type-row">
+              <div class="type-info">
+                <p class="caption-text">MONTSERRAT / REGULAR</p>
+                <p class="font-montserrat">Aa Bb Cc Dd<br />0123456789</p>
+                <p class="component-note">
+                  Paragraphs, navigation, and captions
+                </p>
+              </div>
+
+              <div class="type-preview">
+                <p class="body-text">
+                  My work brings together user experience, visual design, and
+                  interaction to create thoughtful digital experiences.
+                </p>
+                <p class="component-note">Body text example</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="style-guide-footer">
+      <p>© 2026 Lexi Qiao</p>
+
+      <div class="footer-links">
+        <a href="style-guide.html">Style Guide</a>
+        <span>·</span>
+        <a href="citations.html">Citations</a>
+        <span>·</span>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+          >GitHub</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>

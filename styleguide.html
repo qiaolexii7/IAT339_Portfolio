@@ -1,0 +1,1077 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Style Guide</title>
+
+    <link href="../css/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- WEBSITE HEADER -->
+    <header>
+      <nav class="main-nav">
+        <div class="nav-left">
+          <a class="nav-image-link" href="../html/index.html">
+            <img
+              class="nav-logo nav-image-default"
+              src="../image/qqtea-icon.svg"
+              alt="QQTea icon"
+            />
+            <img
+              class="nav-logo nav-image-hover"
+              src="../image/qqtea-icon-hover.svg"
+              alt=""
+            />
+          </a>
+        </div>
+
+        <div class="nav-right">
+          <a class="nav-link" href="../html/about.html">ABOUT</a>
+          <a class="nav-link" href="../html/product-listing.html">MENU</a>
+          <a class="nav-link" href="../html/contact.html">CONTACT US</a>
+          <a class="nav-image-link" href="../html/cart.html">
+            <img
+              class="nav-cart-icon nav-image-default"
+              src="../image/cart-icon.svg"
+              alt="Shopping cart icon"
+            />
+            <img
+              class="nav-cart-icon nav-image-hover"
+              src="../image/cart-icon-hover.svg"
+              alt=""
+            />
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- STYLE GUIDE TITLE -->
+    <header class="style-guide-header">
+      <h1>QQTea STYLE GUIDE</h1>
+      <p>
+        A style guide for QQTea, documenting visual identity, interface
+        patterns, and reusable components.
+      </p>
+    </header>
+
+    <!-- SIDE NAV -->
+    <div class="style-guide-layout">
+      <nav class="style-guide-nav">
+        <p class="style-guide-nav-heading">STYLE GUIDE</p>
+        <a class="nav-link" href="#interactive_elements"
+          >Interactive Elements</a
+        >
+        <a class="nav-link" href="#text_elements">Text Elements</a>
+        <a class="nav-link" href="#combined_elements">Combined Elements</a>
+        <a class="nav-link" href="#branding">Branding</a>
+
+        <p class="style-guide-nav-heading nav-section-heading">TEMPLATE</p>
+        <a class="nav-link" href="product-listing.html">Product Listing</a>
+        <a class="nav-link" href="cart.html">Cart Details</a>
+        <a class="nav-link" href="checkout.html">Checkout</a>
+      </nav>
+
+      <main class="style-guide-main">
+        <!-- INTERACTIVE ELEMENTS SECTION // -->
+        <section id="interactive_elements">
+          <h2>Interactive Elements</h2>
+          <section class="element">
+            <h3 class="element-title">In-text link</h3>
+
+            <h4>CSS selector:</h4>
+            <p>.intext-link</p>
+
+            <h4>Sample code:</h4>
+            <pre><code>&lt;p&gt;
+  Craving something new? Explore our
+  &lt;a class="intext-link" href="product-listing.html"&gt;
+    seasonal tea collection.
+  &lt;/a&gt;
+&lt;/p&gt; </code></pre>
+
+            <h4>Rendered element:</h4>
+            <p>
+              Craving something new? Explore our
+              <a class="intext-link" href="product-listing.html">
+                seasonal tea collection.
+              </a>
+            </p>
+          </section>
+
+          <section class="element">
+            <h3 class="element-title">Navigation Link</h3>
+
+            <h4>CSS selector:</h4>
+            <p>.nav-link</p>
+
+            <h4>Sample code:</h4>
+            <pre><code>&lt;a class="nav-link" href="#"&gt;HOME&lt;/a&gt;</code></pre>
+
+            <h4>Rendered element:</h4>
+            <a class="nav-link" href="#">HOME</a>
+          </section>
+
+          <section class="element">
+            <h3 class="element-title">Submit/Reset Buttons</h3>
+            <!--type="submit" and type="reset" required later-->
+
+            <h4>CSS selector:</h4>
+            <p>.submit-reset-button</p>
+
+            <h4>Sample code:</h4>
+            <pre><code>&lt;div class="submit-reset-button"&gt;
+  &lt;button type="submit"&gt;Add to Cart&lt;/button&gt;
+  &lt;button type="reset"&gt;Start Over&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+
+            <h4>Rendered element:</h4>
+
+            <div class="submit-reset-button">
+              <button type="submit">Add to Cart</button>
+              <button type="reset">Start Over</button>
+            </div>
+          </section>
+
+          <section class="element">
+            <h3 class="element-title">Primary Action Button</h3>
+
+            <h4>CSS selector:</h4>
+            <p>.primary-button</p>
+
+            <h4>Sample code:</h4>
+            <pre><code>&lt;button class="primary-button" type="submit"&gt;Place Order&lt;/button&gt;</code></pre>
+
+            <h4>Rendered element:</h4>
+            <button class="primary-button" type="submit">Place Order</button>
+          </section>
+
+          <section class="element">
+            <h3 class="element-title">Text Input Field with Label</h3>
+
+            <h4>CSS selector:</h4>
+            <p>.input-label-section</p>
+
+            <h4>Sample code:</h4>
+            <pre><code>&lt;div class="input-label-section"&gt;
+  &lt;label for="cup-name"&gt;Name for your cup:&lt;/label&gt;
+  &lt;input type="text" id="cup-name" placeholder="Your name" /&gt;
+&lt;/div&gt;</code></pre>
+
+            <h4>Rendered element:</h4>
+            <div class="input-label-section">
+              <label for="cup-name">Name for your cup:</label>
+              <input type="text" id="cup-name" placeholder="Your name" />
+            </div>
+          </section>
+
+          <section class="element">
+            <h3 class="element-title">Radio Button with Label</h3>
+
+            <h4>CSS selector:</h4>
+            <p>.radio-option</p>
+
+            <h4>Sample code:</h4>
+            <pre><code>&lt;label class="radio-option"&gt;
+  &lt;input type="radio" id="half-sweet" value="50" /&gt;
+  &lt;span&gt;50% Sweet&lt;/span&gt;
+&lt;/label&gt;</code></pre>
+
+            <h4>Rendered element:</h4>
+
+            <label class="radio-option">
+              <input type="radio" id="half-sweet" value="50" />
+              <span>50% Sweet</span>
+            </label>
+          </section>
+
+          <section class="element">
+            <h3 class="element-title">Image as a Link</h3>
+
+            <h4>CSS selector:</h4>
+            <p>.image-as-link</p>
+
+            <h4>Sample code:</h4>
+            <pre><code>&lt;a
+  class="image-link" 
+  href="https://www.foxyfolksy.com/brown-sugar-milk-tea/"
+&gt;
+  &lt;img 
+    src="../image/brown-sugar-milk-tea.png" 
+    alt="Brown sugar milk tea" 
+    class="image-as-link"
+  /&gt;
+&lt;/a&gt;</code></pre>
+
+            <h4>Rendered element:</h4>
+
+            <a
+              class="image-link"
+              href="https://www.foxyfolksy.com/brown-sugar-milk-tea/"
+            >
+              <img
+                src="../image/brown-sugar-milk-tea.jpg"
+                alt="Brown sugar milk tea"
+                class="image-as-link"
+              />
+            </a>
+          </section>
+        </section>
+        <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+        <!-- TEXT ELEMENTS SECTION // -->
+        <section id="text_elements">
+          <h2>Text Elements</h2>
+
+          <section class="element heading-example">
+            <h3 class="element-title">Headings</h3>
+
+            <h4>CSS selector:</h4>
+            <p>h1 h2 h3 h4</p>
+
+            <h4>Sample code:</h4>
+            <pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;</code></pre>
+
+            <h4>Rendered element:</h4>
+
+            <p class="heading-one-example">HEADING 1</p>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+          </section>
+
+          <section class="element">
+            <h3 class="element-title">Paragraphs</h3>
+
+            <h4>CSS selector:</h4>
+            <p>p</p>
+
+            <h4>Sample code:</h4>
+            <pre><code>&lt;p&gt;
+  QQTea makes playful drinks with freshly brewed tea,
+  fruit, milk, and chewy toppings! Every cup can be customized
+  to match your perfect level of sweetness and ice.
+&lt;/p&gt;</code></pre>
+
+            <h4>Rendered element:</h4>
+
+            <p>
+              QQTea makes playful drinks with freshly brewed tea, fruit, milk,
+              and chewy toppings! Every cup can be customized to match your
+              perfect level of sweetness and ice.
+            </p>
+          </section>
+
+          <section class="element">
+            <h3 class="element-title">Numbered Lists</h3>
+
+            <h4>CSS selector:</h4>
+            <p>ol li</p>
+
+            <h4>Sample code:</h4>
+            <pre><code>&lt;ol&gt;
+  &lt;li&gt;Pick your drink&lt;/li&gt;
+  &lt;li&gt;Choose sweetness and ice&lt;/li&gt;
+  &lt;li&gt;Choose toppings&lt;/li&gt;
+  &lt;li&gt;Please enjoy:)&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+            <h4>Rendered element:</h4>
+
+            <ol>
+              <li>Pick your drink</li>
+              <li>Choose sweetness and ice</li>
+              <li>Choose toppings</li>
+              <li>Please enjoy:)</li>
+            </ol>
+          </section>
+        </section>
+        <!-- // TEXT ELEMENTS SECTION -->
+
+        <!-- COMBINED ELEMENTS SECTION // -->
+        <section id="combined_elements">
+          <h2>Combined Elements</h2>
+
+          <section class="element">
+            <h3 class="element-title">Main Navigation</h3>
+
+            <h4>CSS selector:</h4>
+            <p>.main-nav</p>
+
+            <h4>Sample code:</h4>
+            <pre><code>&lt;nav class="main-nav"&gt;
+  &lt;div class="nav-left"&gt;
+    &lt;a class="nav-image-link" href="../html/index.html"&gt;
+      &lt;img
+        class="nav-logo nav-image-default"
+        src="../image/qqtea-icon.svg"
+        alt="QQTea home"
+      /&gt;
+      &lt;img
+        class="nav-logo nav-image-hover"
+        src="../image/qqtea-icon-hover.svg"
+        alt=""
+      /&gt;
+    &lt;/a&gt;
+    &lt;a class="current" href="styleguide.html"&gt;STYLE GUIDE&lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class="nav-right"&gt;
+    &lt;a class="nav-link" href="../html/about.html"&gt;ABOUT&lt;/a&gt;
+    &lt;a class="nav-link" href="../html/product-listing.html"&gt;MENU&lt;/a&gt;
+    &lt;a class="nav-link" href="../html/contact.html"&gt;CONTACT US&lt;/a&gt;
+    &lt;a class="nav-image-link" href="../html/cart.html"&gt;
+      &lt;img
+        class="nav-cart-icon nav-image-default"
+        src="../image/cart-icon.svg"
+        alt="Shopping cart"
+      /&gt;
+      &lt;img
+        class="nav-cart-icon nav-image-hover"
+        src="../image/cart-icon-hover.svg"
+        alt=""
+      /&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+            <h4>Rendered element:</h4>
+            <nav class="main-nav">
+              <div class="nav-left">
+                <a class="nav-image-link" href="../html/index.html">
+                  <img
+                    class="nav-logo nav-image-default"
+                    src="../image/qqtea-icon.svg"
+                    alt="QQTea home"
+                  />
+                  <img
+                    class="nav-logo nav-image-hover"
+                    src="../image/qqtea-icon-hover.svg"
+                    alt=""
+                  />
+                </a>
+                <a class="current" href="styleguide.html">STYLE GUIDE</a>
+              </div>
+
+              <div class="nav-right">
+                <a class="nav-link" href="../html/about.html">ABOUT</a>
+                <a class="nav-link" href="../html/product-listing.html">MENU</a>
+                <a class="nav-link" href="../html/contact.html">CONTACT US</a>
+                <a class="nav-image-link" href="../html/cart.html">
+                  <img
+                    class="nav-cart-icon nav-image-default"
+                    src="../image/cart-icon.svg"
+                    alt="Shopping cart"
+                  />
+                  <img
+                    class="nav-cart-icon nav-image-hover"
+                    src="../image/cart-icon-hover.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </nav>
+          </section>
+
+          <section class="element">
+            <h3 class="element-title">Product Listing</h3>
+
+            <h4>CSS selector:</h4>
+            <p>.product-listing</p>
+
+            <h4>Sample code:</h4>
+            <pre><code>&lt;div class="product-listing"&gt;
+  &lt;a href="brown-sugar-milk-tea.html" class="product-image-link"&gt;
+    &lt;img 
+      src="image/brown-sugar-milk-tea-icon.png" 
+      alt="Brown sugar pearl milk tea" 
+      class="image-icon"
+    /&gt;
+  &lt;/a&gt;
+
+  &lt;div class="product-info"&gt;
+    &lt;h3&gt;Brown Sugar QQTea&lt;/h3&gt;
+    &lt;p&gt;Black Tea Base&lt;/p&gt;
+
+    &lt;div class="price-cart"&gt;
+      &lt;p class="product-listing-price"&gt;$5.60&lt;/p&gt;
+      &lt;a
+        class="product-listing-button"
+        href="../html/brown-sugar.html"
+        &gt;
+          View Details
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <h4>Rendered element:</h4>
+
+            <div class="product-listing">
+              <a href="brown-sugar-milk-tea.html" class="product-image-link">
+                <img
+                  src="../image/brown-sugar-milk-tea-icon.png"
+                  alt="Brown sugar pearl milk tea"
+                  class="image-icon"
+                />
+              </a>
+
+              <div class="product-info">
+                <h3>Brown Sugar QQTea</h3>
+                <p>Black Tea Base</p>
+
+                <div class="price-cart">
+                  <p class="product-listing-price">$5.60</p>
+                  <a
+                    class="product-listing-button"
+                    href="../html/brown-sugar.html"
+                  >
+                    View Details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="element">
+            <h3 class="element-title">Payment Form</h3>
+
+            <h4>CSS selector:</h4>
+            <p>.checkout-form</p>
+
+            <h4>Sample code:</h4>
+            <pre><code>&lt;form class="checkout-form"&gt;
+  &lt;div class="pickup-section"&gt;
+    &lt;h3&gt;PICKUP DETAILS&lt;/h3&gt;
+    &lt;h4&gt;Schedule Pickup&lt;/h4&gt;
+
+    &lt;div class="schedule-pickup-section"&gt;
+      &lt;label class="radio-option"&gt;
+        &lt;input type="radio" id="asap" name="schedule-pickup" value="" checked&gt;
+        &lt;span&gt;ASAP&lt;/span&gt;
+      &lt;/label&gt;
+      &lt;label class="radio-option"&gt;
+        &lt;input type="radio" id="schedule" name="schedule-pickup" value=""&gt;
+        &lt;span&gt;Schedule&lt;/span&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
+
+    &lt;h4&gt;Date &amp; Time&lt;/h4&gt;
+    &lt;div class="datetime-section"&gt;
+      &lt;input type="date" id="pickup-date" name="pickup-date" required&gt;
+      &lt;input type="time" id="pickup-time" name="pickup-time" required&gt;
+    &lt;/div&gt;
+
+    &lt;h4&gt;Pickup Method&lt;/h4&gt;
+    &lt;div class="pickup-method-section"&gt;
+      &lt;label class="radio-option"&gt;
+        &lt;input type="radio" name="pickup-method" value="" checked&gt;
+        &lt;span&gt;In-Store&lt;/span&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+
+  &lt;div class="payment-method-section"&gt;
+    &lt;h4&gt;Payment Method&lt;/h4&gt;
+    &lt;label class="radio-option"&gt;
+      &lt;input type="radio" id="apple-pay" name="payment-method" value=""&gt;
+      &lt;span&gt;Apple Pay&lt;/span&gt;&lt;br&gt;
+    &lt;/label&gt;
+
+    &lt;label class="radio-option"&gt;
+      &lt;input type="radio" id="google-pay" name="payment-method" value=""&gt;
+      &lt;span&gt;Google Pay&lt;/span&gt;&lt;br&gt;
+    &lt;/label&gt;
+
+    &lt;label class="radio-option"&gt;
+      &lt;input type="radio" id="card" name="payment-method" value=""&gt;
+      &lt;span&gt;Add a new payment method&lt;/span&gt;&lt;br&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+
+
+  &lt;div class="payment-info-section"&gt;
+    &lt;h4&gt;Payment Information&lt;/h4&gt;
+
+    &lt;div class="cardholder-field"&gt;
+      &lt;label for="card-name"&gt;Cardholder Name&lt;/label&gt;
+      &lt;input type="text" id="card-name" required&gt;
+    &lt;/div&gt;
+
+    &lt;div class="card-number-field"&gt;
+      &lt;label for="card-number"&gt;Card Number&lt;/label&gt;
+      &lt;input type="text" id="card-number" placeholder="1234 4567 9012 3456" required&gt;
+    &lt;/div&gt;
+
+    &lt;div class="expiration-field"&gt;
+      &lt;label for="expiration"&gt;Expiration Date&lt;/label&gt;
+      &lt;input type="text" id="expiration" placeholder="MM/YY" required&gt;
+    &lt;/div&gt;
+
+    &lt;div class="cvv-field"&gt;
+      &lt;label for="cvv"&gt;Security Code&lt;/label&gt;
+      &lt;input type="text" id="cvv" placeholder="CVV" required&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;button class="primary-button" type="submit"&gt;Place Order&lt;/button&gt;
+
+&lt;/form&gt;</code></pre>
+
+            <h4>Rendered element:</h4>
+
+            <form class="checkout-form">
+              <div class="pickup-section">
+                <p class="checkout-demo-title">PICKUP DETAILS</p>
+                <p class="checkout-demo-heading">Schedule Pickup</p>
+
+                <div class="schedule-pickup-section">
+                  <label class="radio-option">
+                    <input
+                      type="radio"
+                      id="asap"
+                      name="schedule-pickup"
+                      value=""
+                      checked
+                    />
+                    <span>ASAP</span>
+                  </label>
+                  <label class="radio-option">
+                    <input
+                      type="radio"
+                      id="schedule"
+                      name="schedule-pickup"
+                      value=""
+                    />
+                    <span>Schedule</span>
+                  </label>
+                </div>
+
+                <h4>Date & Time</h4>
+                <div class="datetime-section">
+                  <input
+                    type="date"
+                    id="pickup-date"
+                    name="pickup-date"
+                    required
+                  />
+                  <input
+                    type="time"
+                    id="pickup-time"
+                    name="pickup-time"
+                    required
+                  />
+                </div>
+
+                <h4>Pickup Method</h4>
+                <div class="pickup-method-section">
+                  <label class="radio-option">
+                    <input type="radio" name="pickup-method" value="" checked />
+                    <span>In-Store</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="payment-method-section">
+                <h4>Payment Method</h4>
+                <label class="radio-option">
+                  <input
+                    type="radio"
+                    id="apple-pay"
+                    name="payment-method"
+                    value=""
+                  />
+                  <span>Apple Pay</span><br />
+                </label>
+
+                <label class="radio-option">
+                  <input
+                    type="radio"
+                    id="google-pay"
+                    name="payment-method"
+                    value=""
+                  />
+                  <span>Google Pay</span><br />
+                </label>
+
+                <label class="radio-option">
+                  <input
+                    type="radio"
+                    id="card"
+                    name="payment-method"
+                    value=""
+                  />
+                  <span>Add a new payment method</span><br />
+                </label>
+              </div>
+
+              <div class="payment-info-section">
+                <h4>Payment Information</h4>
+
+                <div class="cardholder-field">
+                  <label for="card-name">Cardholder Name</label>
+                  <input type="text" id="card-name" required />
+                </div>
+
+                <div class="card-number-field">
+                  <label for="card-number">Card Number</label>
+                  <input
+                    type="text"
+                    id="card-number"
+                    placeholder="1234 4567 9012 3456"
+                    required
+                  />
+                </div>
+
+                <div class="expiration-field">
+                  <label for="expiration">Expiration Date</label>
+                  <input
+                    type="text"
+                    id="expiration"
+                    placeholder="MM/YY"
+                    required
+                  />
+                </div>
+
+                <div class="cvv-field">
+                  <label for="cvv">Security Code</label>
+                  <input type="text" id="cvv" placeholder="CVV" required />
+                </div>
+              </div>
+
+              <button class="primary-button" type="submit">Place Order</button>
+            </form>
+          </section>
+
+          <section class="element">
+            <h3 class="element-title">Checkout Cart</h3>
+
+            <h4>CSS selector:</h4>
+            <p>.cart</p>
+
+            <h4>Sample code:</h4>
+            <pre><code>&lt;div class="cart"&gt;
+  &lt;p class="cart-demo-title"&gt;CART DETAILS&lt;/p&gt;
+  &lt;p class="cart-demo-heading"&gt;Order Summary&lt;/p&gt;
+
+  &lt;div class="cart-item"&gt;
+    &lt;img 
+      src="image/brown-sugar-milk-tea-icon.png" 
+      alt="Brown sugar pearl milk tea" 
+      class="image-icon"
+    /&gt;
+
+    &lt;div class="cart-item-info"&gt;
+      &lt;div class="cart-title-price"&gt;
+        &lt;h3&gt;Brown Sugar QQTea&lt;/h3&gt;
+        &lt;h4&gt;$5.60&lt;/h4&gt;
+      &lt;/div&gt;
+
+      &lt;p&gt;100% Sugar&lt;/p&gt;
+      &lt;p&gt;No Ice&lt;/p&gt;
+
+      &lt;div class="cart-edit"&gt;
+        &lt;div class="quantity-control"&gt;
+          &lt;button type="button"&gt;-&lt;/button&gt;
+          &lt;input 
+            type="number" 
+            id="quantity-brown-sugar" 
+            value="1" 
+            min="1"
+          /&gt;
+          &lt;button type="button"&gt;+&lt;/button&gt;
+        &lt;/div&gt;
+
+        &lt;div&gt;
+          &lt;button class="edit-btn"&gt;Edit&lt;/button&gt;
+          &lt;button class="remove-btn"&gt;Remove&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+
+  &lt;div class="cart-item"&gt;
+    &lt;img 
+      src="image/osmanthus-lychee-lemonade-icon.png" 
+      alt="Osmanthus Lychee Lemonade" 
+      class="image-icon"
+    /&gt;
+
+    &lt;div class="cart-item-info"&gt;
+      &lt;div class="cart-title-price"&gt;
+        &lt;h3&gt;Osmanthus Lychee Lemonade&lt;/h3&gt;
+        &lt;h4&gt;$5.80&lt;/h4&gt;
+      &lt;/div&gt;
+
+      &lt;p&gt;50% Sugar&lt;/p&gt;
+      &lt;p&gt;Less Ice&lt;/p&gt;
+
+      &lt;div class="cart-edit"&gt;
+        &lt;div class="quantity-control"&gt;
+          &lt;button type="button"&gt;-&lt;/button&gt;
+          &lt;input 
+            type="number" 
+            id="quantity-lychee" 
+            value="1" 
+            min="1"
+          /&gt;
+          &lt;button type="button"&gt;+&lt;/button&gt;
+        &lt;/div&gt;
+
+        &lt;div&gt;
+          &lt;button class="edit-btn"&gt;Edit&lt;/button&gt;
+          &lt;button class="remove-btn"&gt;Remove&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="cart-total"&gt;
+    &lt;h4&gt;Total&lt;/h4&gt;
+    &lt;h4&gt;$11.40&lt;/h4&gt;
+  &lt;/div&gt;
+  &lt;button class="primary-button" type="submit"&gt;
+    Proceed to Checkout
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+
+            <h4>Rendered element:</h4>
+
+            <div class="cart">
+              <p class="cart-demo-title">CART DETAILS</p>
+              <p class="cart-demo-heading">Order Summary</p>
+
+              <div class="cart-item">
+                <img
+                  src="../image/brown-sugar-milk-tea-icon.png"
+                  alt="Brown sugar pearl milk tea"
+                  class="image-icon"
+                />
+
+                <div class="cart-item-info">
+                  <div class="cart-title-price">
+                    <h3>Brown Sugar QQTea</h3>
+                    <h4>$5.60</h4>
+                  </div>
+
+                  <p>No Ice</p>
+                  <p>100% Sugar</p>
+
+                  <div class="cart-edit">
+                    <div class="quantity-control">
+                      <button type="button">-</button>
+                      <input
+                        type="number"
+                        id="quantity-brown-sugar"
+                        value="1"
+                        min="1"
+                      />
+                      <button type="button">+</button>
+                    </div>
+
+                    <div class="cart-action">
+                      <button class="edit-btn">Edit</button>
+                      <button class="remove-btn">Remove</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cart-item">
+                <img
+                  src="../image/osmanthus-lychee-lemonade-icon.png"
+                  alt="Osmanthus Lychee Lemonade"
+                  class="image-icon"
+                />
+
+                <div class="cart-item-info">
+                  <div class="cart-title-price">
+                    <h3>Osmanthus Lychee Lemonade</h3>
+                    <h4>$5.80</h4>
+                  </div>
+
+                  <p>Less Ice</p>
+                  <p>50% Sugar</p>
+
+                  <div class="cart-edit">
+                    <div class="quantity-control">
+                      <button type="button">-</button>
+                      <input
+                        type="number"
+                        id="quantity-lychee"
+                        value="1"
+                        min="1"
+                      />
+                      <button type="button">+</button>
+                    </div>
+
+                    <div class="cart-action">
+                      <button class="edit-btn">Edit</button>
+                      <button class="remove-btn">Remove</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cart-total">
+                <h4>Total</h4>
+                <h4>$11.40</h4>
+              </div>
+              <button class="primary-button" type="submit">
+                Proceed to Checkout
+              </button>
+            </div>
+          </section>
+        </section>
+        <!-- // COMBINED ELEMENTS SECTION -->
+
+        <!-- // BRANDING SECTION -->
+        <section id="branding">
+          <h2>Branding</h2>
+
+          <div class="element">
+            <h3 class="element-title">About Us</h3>
+            <p>
+              QQTea is an affordable bubble tea shop that offers a variety of
+              customizable drinks with convenient in-store pickup. Customers can
+              order ahead and choose to pick up their drinks as soon as possible
+              or schedule a pickup time. The brand is meant to be friendly,
+              casual, and approachable, like a friend who helps you get your
+              favourite drink without spending too much money or time. We
+              believe our affordable pricing and order-ahead feature make the
+              shop appealing to customers who want a quick and budget-friendly
+              drink option.
+            </p>
+          </div>
+        </section>
+
+        <section class="element">
+          <h3 class="element-title">Typography</h3>
+
+          <div class="element">
+            <div class="font">
+              <p id="ligema">QQTea</p>
+              <p>Ligema: Regular 400</p>
+              <p>Used for the QQTea logo and primary headings.</p>
+            </div>
+            <div class="font">
+              <p id="nanum">Brown Sugar QQTea</p>
+              <p>Nanum Pen Script: Regular 400</p>
+              <p>Used for drink names and secondary headings.</p>
+            </div>
+
+            <div class="font">
+              <p id="line-seed">MENU</p>
+              <p>LINE Seed JP: Regular 400, Regular 700</p>
+              <p>
+                Used for navigation, body copy, prices, buttons, labels, and
+                form information.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="element">
+          <h3 class="element-title">Colour Palette</h3>
+
+          <div class="colour-palette">
+            <!-- cream -->
+            <div class="colour-item">
+              <div class="colour-swatch colour-cream">
+                <p>#FCF8EF</p>
+                <p>Primary background</p>
+              </div>
+
+              <div class="colour-usage">
+                <p>Main page background</p>
+              </div>
+            </div>
+
+            <!-- blue -->
+            <div class="colour-item">
+              <div class="colour-swatch colour-blue">
+                <p>#83B6F1</p>
+                <p>Primary actions and links</p>
+              </div>
+
+              <div class="colour-usage">
+                <a class="intext-link" href="#">seasonal tea collection</a>
+                <a class="nav-link" href="#">HOME</a>
+
+                <button class="primary-button" type="button">
+                  Place Order
+                </button>
+              </div>
+            </div>
+
+            <!-- yellow -->
+            <div class="colour-item">
+              <div class="colour-swatch colour-yellow">
+                <p>#FFD683</p>
+                <p>Selected backgrounds and highlights</p>
+              </div>
+
+              <div class="colour-usage">
+                <div class="price-cart">
+                  <h4>$5.60</h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- gold -->
+            <div class="colour-item">
+              <div class="colour-swatch colour-gold">
+                <p>#C5850F</p>
+                <p>Selected borders and accents</p>
+              </div>
+
+              <div class="colour-usage">
+                <label class="radio-option">
+                  <input type="radio" name="selected-colour-example" checked />
+                  50% Sweet
+                </label>
+              </div>
+            </div>
+
+            <!-- soft gray -->
+            <div class="colour-item">
+              <div class="colour-swatch colour-soft-gray">
+                <p>#D9D5D2</p>
+                <p>Borders and structure</p>
+              </div>
+
+              <div class="colour-usage">
+                <label class="radio-option">
+                  <input type="radio" name="unselected-colour-example" />
+                  50% Sweet
+                </label>
+
+                <div class="quantity-control">
+                  <button type="button">−</button>
+
+                  <input
+                    type="number"
+                    value="1"
+                    min="1"
+                    aria-label="Quantity"
+                  />
+
+                  <button type="button">+</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- dark -->
+            <div class="colour-item">
+              <div class="colour-swatch colour-dark">
+                <p>#2D2926</p>
+                <p>Primary text and hover states</p>
+              </div>
+
+              <div class="colour-usage">
+                <p>Primary body text</p>
+
+                <button class="edit-btn" type="button">Edit</button>
+              </div>
+            </div>
+
+            <!-- red -->
+            <div class="colour-item">
+              <div class="colour-swatch colour-red">
+                <p>#D94F4F</p>
+                <p>Remove actions</p>
+              </div>
+
+              <div class="colour-usage">
+                <button class="remove-btn" type="button">Remove</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="element">
+          <h3 class="element-title">Imagery & Art Direction</h3>
+          <div class="imagery-grid">
+            <div class="imagery-item">
+              <div class="imagery-example imagery-thumbnails">
+                <img
+                  src="../image/brown-sugar-milk-tea-icon.png"
+                  alt="Brown Sugar QQTea thumbnail"
+                />
+                <img
+                  src="../image/osmanthus-lychee-lemonade-icon.png"
+                  alt="Osmanthus Lychee Lemonade thumbnail"
+                />
+                <img
+                  src="../image/matcha-mochi-latte.png"
+                  alt="Matcha Mochi Latte thumbnail"
+                />
+              </div>
+
+              <h3>Product Thumbnails</h3>
+              <p>
+                Smaller drink images are used in product cards and checkout
+                areas to help customers quickly identify their selected drinks.
+              </p>
+
+              <div class="imagery-usage">
+                <figure>
+                  <img
+                    src="../image/product-card-example.png"
+                    alt="Drink illustration used in a QQTea product card"
+                  />
+                  <figcaption>Product listing</figcaption>
+                </figure>
+
+                <figure class="cart-example">
+                  <img
+                    src="../image/cart-imagery-example.png"
+                    alt="Drink illustration used in a QQTea shopping cart"
+                  />
+                  <figcaption>Cart thumbnail</figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <div class="imagery-item">
+              <div class="imagery-example imagery-decorations">
+                <img
+                  src="../image/leaf.png"
+                  alt="Decorative autumn leaf illustration"
+                />
+                <img
+                  src="../image/ghost.png"
+                  alt="Decorative ghost illustration"
+                />
+                <img
+                  src="../image/pumpkin.png"
+                  alt="Decorative pumpkin illustration"
+                />
+              </div>
+
+              <h3>Decorative Illustrations</h3>
+              <p>
+                Playful illustrations are used as supporting accents to build
+                consistent branding.
+              </p>
+              <div class="imagery-usage">
+                <figure>
+                  <img
+                    src="../image/seasonal-imagery-example.png"
+                    alt="Decorative ghost illustration used in seasonal QQTea content"
+                  />
+                  <figcaption>Seasonal promotion</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- // BRANDING SECTION -->
+      </main>
+    </div>
+  </body>
+</html>
